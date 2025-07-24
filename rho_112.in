@@ -1,0 +1,14 @@
+&INPUTPP
+  prefix       = 'alo',       ! same as in scf.in
+  filplot      = 'rho_112',           ! output file
+  plot_num     = 0,                   ! 0 = total charge density
+/
+&PLOT
+  iflag        = 2,                   ! 2D plot
+  output_format= 7,                  
+  fileout      = 'rho_112.gnu',
+  nx           = 200, ny = 200,
+  x0(1) = 0.5, x0(2) = 0.015, x0(3) = 0.0,
+  e1(1) = 1,e1(2) = 0.0, e1(3) = 0.0,    
+  e2(1) = 0.0, e2(2) = 0.0, e2(3) = 1,   
+/â
